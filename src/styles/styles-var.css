@@ -1,0 +1,26 @@
+:root{
+/*background-color*/
+
+--background-dark: #1E293B;
+--background-light: #FFFFFF;
+--background-primary: #3B82F6;
+--background-active: #1D4ED8;
+
+/*text-color*/
+--text-default: #1E293B;
+--text-light: #FFFFFF;
+--text-primary: #3B82F6;
+--text-secondary: #64748B;
+
+/*fonts*/
+--text-400-14: 400 14px "Inter", sans-serif;
+--text-500-14: 500 14px "Inter", sans-serif;
+--h3-700-30: 700 30px "Inter", sans-serif;
+--h6-600-18: 600 18px "Inter", sans-serif;
+--h4-600-24: 600 24px "Inter", sans-serif;
+
+/*border-color*/
+--border-primary: #3B82F6;
+--border-secondary: #CBD5E1;
+}
+

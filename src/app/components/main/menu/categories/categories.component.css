@@ -1,0 +1,33 @@
+.p-button-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  height: 36px;
+  padding: 8px 12px 8px 12px;
+  gap: 8px;
+  background-color: transparent;
+
+  border: 1px solid var(--border-primary);
+  border-radius: 4px;
+}
+
+.p-button-categories .p-button-label {
+  font: var(--text-500-14);
+  color: var(--text-primary);
+}
+
+.p-button-categories .p-button-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+
+  color: var(--background-primary);
+
+}
+
