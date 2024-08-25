@@ -34,19 +34,19 @@ header {
   border: none;
 }
 
-.p-button-login .p-button-label {
+.p-button-login .p-button-login-label {
   font: var(--text-400-14);
   color: var(--text-light);
 }
 
-.p-button-login .p-button-icon {
+.p-button-login .p-button-login-icon {
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--text-light);
   width: 20px;
   height: 20px;
-  margin: 0;
+  padding: 2px;
 }
 
 .p-button-newAd {
@@ -65,12 +65,12 @@ header {
   background: var(--background-active);
 }
 
-.p-button-newAd .p-button-label {
+.p-button-newAd .p-button-newAd-label {
   font: var(--text-400-14);
   color: var(--text-light);
 }
 
-.p-button-newAd .p-button-icon {
+.p-button-newAd .p-button-newAd-icon {
   display: flex;
   justify-content: center;
   align-items: center;
