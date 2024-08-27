@@ -10,3 +10,8 @@ body {
   height: 100%;
 }
 
+.container{
+  width: 1296px;
+  margin: 0 auto;
+}
+
