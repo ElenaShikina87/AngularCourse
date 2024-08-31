@@ -4,7 +4,6 @@ import {HeaderComponent} from "./components/header/header.component";
 import {CardsComponent} from "./components/main/cards/cards.component";
 import {MenuComponent} from "./components/main/menu/menu.component";
 import {MainComponent} from "./components/main/main.component";
-import {CategoriesComponent} from "./components/main/menu/categories/categories.component";
 
 
 export const routes: Routes = [
@@ -34,8 +33,4 @@ export const routes: Routes = [
     component: MainComponent
   },
 
-  {
-    path: 'categories',
-    component: CategoriesComponent
-  }
 ];

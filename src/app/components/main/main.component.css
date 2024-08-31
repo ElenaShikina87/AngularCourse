@@ -1,22 +1,15 @@
 main {
-  display: flex;
-  justify-content: center;
   width: 100%;
-  border: none;
-
   background-color: var(--background-light);
 }
 
-.main-container {
+.main-block {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 1296px;
-  border: none;
+  width: 100%;
 }
-
-#recommendation {
+h4 {
   align-self: flex-start;
   margin-top: 32px;
   margin-bottom: 24px;
