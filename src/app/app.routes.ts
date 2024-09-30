@@ -1,41 +1,45 @@
 import { Routes } from '@angular/router';
-import {AppComponent} from "./app.component";
-import {HeaderComponent} from "./components/header/header.component";
-import {CardsComponent} from "./components/main/cards/cards.component";
-import {MenuComponent} from "./components/main/menu/menu.component";
-import {MainComponent} from "./components/main/main.component";
-import {CategoriesComponent} from "./components/main/menu/categories/categories.component";
+import {HomeComponent} from "./pages/home/home.component";
+import {NewAdComponent} from "./pages/new-ad/new-ad.component";
+import {MyAdsComponent} from "./pages/my-ads/my-ads.component";
+import {ProductComponent} from "./pages/product/product.component";
 
 
 export const routes: Routes = [
 
   {
-    path: 'app-component',
-    component: AppComponent,
+    path: '',
+    loadComponent: () => import('./pages/home/home.component').then ( 
+      (c) => c.HomeComponent
+    ),
+    children: [
+      {
+        path: 'login',
+        loadComponent: () => import('./pages/modal/login/login.component').then(
+          (c) => c.LoginComponent
+        )
+      }
+    ]
   },
 
   {
-    path: 'header',
-    component: HeaderComponent,
+    path: 'home',
+    component: HomeComponent,
   },
 
   {
-    path: 'cards',
-    component: CardsComponent,
+    path: 'app-new-ad',
+    component: NewAdComponent,
   },
 
   {
-    path: 'menu',
-    component: MenuComponent
+    path: 'app-my-ad',
+    component: MyAdsComponent,
   },
 
   {
-    path: 'main',
-    component: MainComponent
+    path: 'app-product/:productId',
+    component: ProductComponent,
   },
 
-  {
-    path: 'categories',
-    component: CategoriesComponent
-  }
 ];

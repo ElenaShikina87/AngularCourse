@@ -1,0 +1,12 @@
+<div class="product-card">
+  <div class="product-card-header">
+    <!-- <app-carl [images]="images()"></app-carl> -->
+    <img routerLink="/app-product/{{product.id}}" src="{{product.thumbnail}}" alt="{{product.title}}">
+  </div>
+  <div class="product-card-footer">
+    <p class="product-card-footer__title" routerLink="/app-product/{{product.id}}">{{product.title}}</p>
+    <p class="product-card-footer__price">{{ product.price }} &#8381;</p>
+    <p class="product-card-footer__address">{{ product.category }}</p>
+    <p class="product-card-footer__date">{{ product.meta.createdAt}}</p>
+  </div>
+</div>

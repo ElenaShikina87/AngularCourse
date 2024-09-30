@@ -1,8 +1,12 @@
 <main>
-  <div class="main-container">
+  <div class="main-block">
     <app-menu></app-menu>
-    <span id="recommendation">Рекомендации для вас</span>
-    <app-cards></app-cards>
+    <div class="container">
+      <h4>Рекомендации для вас</h4>
+      <div class="main-block-product-cards">
+        <app-product-card *ngFor="let product of data?.products" [product] = 'product'></app-product-card>
+      </div>
+    </div>
   </div>
 </main>
 

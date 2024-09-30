@@ -1,0 +1,38 @@
+.header-block-newAd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: var(--background-primary);
+  border: none;
+  margin-left: 24px;
+  margin-top: 2px;
+}
+
+.header-block-newAd:hover {
+  background: var(--background-active);
+  transition: background-color 0.5s;
+}
+
+.header-block-newAd:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.header-block-newAd .header-block-newAd__label {
+  font: var(--text-400-14);
+  color: var(--text-light);
+}
+
+.header-block-newAd .header-block-newAd__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  color: var(--text-light);
+}
+

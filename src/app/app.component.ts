@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
 import {HeaderComponent} from "./components/header/header.component";
-import { ButtonModule } from 'primeng/button';
+import {ButtonModule} from 'primeng/button';
 import {MainComponent} from "./components/main/main.component";
-import { CascadeSelectModule } from "primeng/cascadeselect";
+
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, ButtonModule, MainComponent, CascadeSelectModule],
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    ButtonModule,
+    MainComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 

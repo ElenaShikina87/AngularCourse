@@ -1,84 +1,15 @@
 header {
   width: 100%;
-}
-.header-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  margin: 0 auto;
-
   background-color: var(--background-dark);
+  height: 52px;
+  padding: 8px;
 }
 
 .header-block {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  width: 1296px;
-  height: 36px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  gap: 24px;
-}
-
-.p-button-login {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 0 8px 0;
-  gap: 8px;
-  background-color: transparent;
-  border: none;
-}
-
-.p-button-login .p-button-login-label {
-  font: var(--text-400-14);
-  color: var(--text-light);
-}
-
-.p-button-login .p-button-login-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--text-light);
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-}
-
-.p-button-newAd {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 12px 6px 12px;
-  gap: 4px;
-  background-color: var(--background-primary);
-
-  border: none;
-}
-
-.p-button-newAd:hover {
-  background: var(--background-active);
-}
-
-.p-button-newAd .p-button-newAd-label {
-  font: var(--text-400-14);
-  color: var(--text-light);
-}
-
-.p-button-newAd .p-button-newAd-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 20px;
-  height: 20px;
-  margin: 0;
-
-  color: var(--text-light);
+  align-self: center;
+  align-items: flex-start;
 }
 

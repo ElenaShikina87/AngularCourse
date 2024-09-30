@@ -5,22 +5,45 @@
 --background-light: #FFFFFF;
 --background-primary: #3B82F6;
 --background-active: #1D4ED8;
+--background-primary-op4: rgba(59, 130, 246, 0.04);
+--background-primary-op8: rgba(59, 130, 246, 0.08);
+--background-hover-menu: #F5F5F5;
+--background-panel: #F8FAFC;
 
 /*text-color*/
 --text-default: #1E293B;
 --text-light: #FFFFFF;
 --text-primary: #3B82F6;
 --text-secondary: #64748B;
+--text-active: #1D4ED8;
+--text-danger: #EF4444;
+--text-on-hightlight: #1E3A8A;
 
 /*fonts*/
 --text-400-14: 400 14px "Inter", sans-serif;
+--text-400-16: 400 16px "Inter", sans-serif;
 --text-500-14: 500 14px "Inter", sans-serif;
 --h3-700-30: 700 30px "Inter", sans-serif;
+--h3-600-30: 700 30px "Inter", sans-serif;
 --h6-600-18: 600 18px "Inter", sans-serif;
 --h4-600-24: 600 24px "Inter", sans-serif;
+--h5-400-20: 400 20px "Inter", sans-serif;
+
+/*line-height*/
+--line-height-h6: 24px;
+--line-height-h4: 32px;
+--line-height-h3: 36px;
+--line-height-h5: 28px;
+--line-height-secondary-text: 20px;
+--line-height-default-text: 20px;
 
 /*border-color*/
 --border-primary: #3B82F6;
 --border-secondary: #CBD5E1;
+--border-page: #E2E8F0;
+--border-primary-op16: rgba(59, 130, 246, 0.16);
+--border-primary-op32: rgba(59, 130, 246, 0.32);
+--border-form: #CBD5E1;
+--border-panel: #E2E8F0;
 }
 
