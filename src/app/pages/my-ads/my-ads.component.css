@@ -1,0 +1,9 @@
+.main-block-my-ads{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+

@@ -1,11 +1,12 @@
 <div class="product-card">
   <div class="product-card-header">
-    <img ngSrc="https://dummyimage.com/306/c0c0c0" alt="card" height="240" width="306">
+    <!-- <app-carl [images]="images()"></app-carl> -->
+    <img routerLink="/app-product/{{product.id}}" src="{{product.thumbnail}}" alt="{{product.title}}">
   </div>
   <div class="product-card-footer">
-    <h6 class="product-card-header">Гитара Fender</h6>
-    <p class="product-card-price">20 000 &#8381;</p>
-    <p class="product-card-address">Москва, Ленинский проспект</p>
-    <p class="product-card-date">Сегодня 14:12</p>
+    <p class="product-card-footer__title" routerLink="/app-product/{{product.id}}">{{product.title}}</p>
+    <p class="product-card-footer__price">{{ product.price }} &#8381;</p>
+    <p class="product-card-footer__address">{{ product.category }}</p>
+    <p class="product-card-footer__date">{{ product.meta.createdAt}}</p>
   </div>
 </div>

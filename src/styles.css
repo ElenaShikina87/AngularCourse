@@ -15,3 +15,11 @@ body {
   margin: 0 auto;
 }
 
+h4 {
+  align-self: flex-start;
+  margin-top: 32px;
+  margin-bottom: 24px;
+  font: var(--h4-600-24);
+  color: var(--text-default);
+  border: none;
+}

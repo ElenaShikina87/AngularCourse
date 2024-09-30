@@ -1,0 +1,199 @@
+/*Стиль кнопки Войти для неавторизованных пользователей*/
+
+.header-block-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    color: var(--text-light);
+    background-color: transparent;
+    border: none;
+  }
+  
+.header-block-login__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    padding: 2px;
+  }
+  
+.header-block-login__label{
+    font: var(--text-400-14);
+    color: var(--text-light);
+  }
+  
+  /* не работает */
+.header-block-login:hover{
+   .header-block-login__icon {color: var(--text-primary)};
+   .header-block-login__label {color: var(--text-primary)};
+  }
+  
+.header-block-login:focus {
+    border: none;
+    box-shadow: none;
+  }
+
+  .login{
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: var(--background-light);
+    border: none;
+    border-radius: 8px;
+  }
+
+  .login .p-dialog-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+    font: var(--h4-600-24);
+    color: var(--text-default);
+}
+
+  .login .p-dialog-header-icon{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 11px;
+    height: 11px;
+    margin: 6px;
+  }
+
+  .login .p-dialog-content {
+    display: flex;
+    flex-direction: column;
+    width: 368px;
+  }
+
+  .login-form-login-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .login-form-password-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .login-form-phone{
+    width: 100%;
+    font: var(--text-400-16);
+    color: var(--text-default);
+    border: 1px solid var(--border-form);
+    border-radius: 4px;
+  }
+
+  .login-form-phone:focus{
+    box-shadow: none;
+  }
+
+  .login-form-password {
+    width: 100%;
+    /* margin-bottom: 8px; */
+    font: var(--text-400-16);
+    color: var(--text-default);
+    border: 1px solid var(--border-form);
+    border-radius: 4px;
+   .p-inputtext{
+        border:none;
+        font: var(--text-400-16); 
+    } 
+  }
+  .p-inputtext:focus{
+    box-shadow: none;
+  }
+
+  .login-block-rememberme{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    font: var(--text-400-16);
+  }
+  .login-block-rememberme-checkbox{
+    display: flex;
+    align-items: center;
+
+    }
+    .login-block-rememberme-checkbox__check .p-checkbox-box{
+        display: block;
+        align-self: center;
+        justify-self: center;
+        width: 16px;
+        height: 16px;
+        margin-right: 4px;
+        border: 1px solid var(--border-form);
+        border-radius: 4px;
+    }
+
+    .login-block-rememberme-checkbox__check .p-checkbox-icon{
+        width: 16px;
+        height: 16px;
+    }
+
+    .login-block-rememberme__forgot{
+        font: var(--text-400-16);
+        color: var(--text-primary);
+    }
+
+    .login-buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .login-buttons__login{
+        display: block;
+        align-self: center;
+        justify-self: center;
+        padding: 12px 40px;
+        background-color: var(--background-primary);
+        border: none;
+        border-radius: 4px;
+        font: var(--text-400-16);
+        color: var(--text-light);
+    }
+
+    .login-buttons__login:hover{
+        background-color: var(--background-active);
+        transition: background-color 0.5s;
+    }
+
+    .login-buttons__login:focus{
+        border: none;
+        box-shadow: none;
+    }
+
+    .login-buttons__registration{
+        display: block;
+        align-self: center;
+        justify-self: center;
+        padding: 12px 40px;
+        background-color: transparent;
+        border: 1px solid var(--border-primary-op32);
+        border-radius: 4px;
+        font: var(--text-400-16);
+        color: var(--text-primary);
+    }
+
+    .p-error-block-login{
+        margin-top:2px;
+        font: var(--text-400-14);
+        color: var(--text-danger);
+    }
+    .p-error-block-password{
+        margin-top:2px;
+        font: var(--text-400-14);
+        color: var(--text-danger);
+    }

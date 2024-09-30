@@ -1,6 +1,9 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
-import {Button,} from "primeng/button";
+import {Button} from "primeng/button";
+
+import {AuthButtonComponent} from "./auth-button/auth-button.component";
+import {NewAdButtonComponent} from "./new-ad-button/new-ad-button.component";
 
 
 @Component({
@@ -8,11 +11,13 @@ import {Button,} from "primeng/button";
   standalone: true,
   imports: [
     NgOptimizedImage,
-    Button
+    Button,
+    AuthButtonComponent,
+    NewAdButtonComponent
   ],
 
   templateUrl: './header.component.html',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated,
   styleUrl: './header.component.css'
 
 })

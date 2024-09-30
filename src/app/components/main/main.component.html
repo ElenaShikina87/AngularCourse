@@ -3,7 +3,9 @@
     <app-menu></app-menu>
     <div class="container">
       <h4>Рекомендации для вас</h4>
-      <app-cards></app-cards>
+      <div class="main-block-product-cards">
+        <app-product-card *ngFor="let product of data?.products" [product] = 'product'></app-product-card>
+      </div>
     </div>
   </div>
 </main>

@@ -1,0 +1,34 @@
+.carousel {
+  position: relative;
+}
+
+.main-image{
+  width: 306px;
+  height: 240px;
+  background-size: cover;
+}
+
+.mini-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.mini-image {
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.line {
+  width: 100%;
+  height: 4px;
+  background: var(--background-primary-op4);
+  &.is-active{
+    background: var(--background-primary-op8);
+  }
+}

@@ -1,0 +1,12 @@
+<section class="carousel" (mouseleave)="setFirstImage()">
+  <section class="main-image" [ngStyle]="mainImageUrl()">
+    <img width="0" height="0" src="" alt="" [src]="currentImage()">
+  </section>
+  <section class="mini-images">
+    @for (image of images(); track image; let i = $index) {
+      <div class="mini-image" (mouseenter)="setCurrentImage(image)">
+       <!--  <div class="line" [ngStyle]=" {'is-active': images[] === currentImage()?.images[i]} "></div>  -->
+      </div>
+    }
+  </section>
+</section>

@@ -8,6 +8,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-bottom: 80px;
 }
 h4 {
   align-self: flex-start;
@@ -16,4 +17,13 @@ h4 {
   font: var(--h4-600-24);
   color: var(--text-default);
   border: none;
+}
+
+.main-block-product-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 32px;
+  column-gap: 24px;
 }

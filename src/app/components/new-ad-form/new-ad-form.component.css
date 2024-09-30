@@ -1,0 +1,199 @@
+.form-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 856px;
+}
+
+.categories-select{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    .categories-select__label{
+        font: var(--text-400-16);
+        color: var(--text-default);
+        margin-bottom: 8px;
+    }
+    .categories-select__label::after{
+        content: '*';
+        color: var(--text-danger);
+    }
+    .categories-select__dropdown{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 416px;
+        padding: 12px;
+        border: 1px solid var(--border-form);
+        border-radius: 4px;
+        font: var(--text-400-16);
+        .p-dropdown-trigger{
+            width: 16px;
+        }
+    }
+
+    .categories-select__dropdown:focus{
+        box-shadow: none;
+    }
+}
+
+.ad-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+    .ad-name__label{
+        font: var(--text-400-16);
+        color: var(--text-default);
+        margin-bottom: 8px;
+    }
+    .ad-name__label::after{
+        content: '*';
+        color: var(--text-danger);
+    }
+    .ad-name__input{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border-form);
+        border-radius: 4px;
+        font: var(--text-400-16);
+    }
+}
+
+.ad-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+    .ad-description__label{
+        font: var(--text-400-16);
+        color: var(--text-default);
+        margin-bottom: 8px;
+    }
+    .ad-description__input{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border-form);
+        border-radius: 4px;
+        font: var(--text-400-16);
+    }
+}
+
+.ad-address{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+    .ad-address__label{
+        font: var(--text-400-16);
+        color: var(--text-default);
+        margin-bottom: 8px;
+    }
+    .ad-address__label::after{
+        content: '*';
+        color: var(--text-danger);
+    }
+    .ad-address__input{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border-form);
+        border-radius: 4px;
+        font: var(--text-400-16);
+    }
+}
+
+.ad-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    gap: 16px;
+    background-color: var(--background-panel);
+    border: 1px solid var(--border-panel);
+    border-radius: 3px;
+        .ad-images__button{
+            display: flex;
+            flex-direction: row;
+            padding: 8px 12px;
+            gap: 8px;
+            background-color: var(--background-primary);
+            border: none;
+            border-radius: 4px;
+            font: var(--text-400-14);
+            color: var(--text-light);
+        }
+        .ad-images__description{
+            font: var(--text-400-14);
+            color: var(--text-default);
+        }
+}
+
+.ad-images__button:hover{
+    border: none;
+    background-color: var(--background-active);
+    transition: .5s;
+}
+
+.ad-images__button:active{
+    border: none;
+    box-shadow: none;
+}
+
+.ad-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 16px;
+    .ad-price__label{
+        font: var(--text-400-16);
+        color: var(--text-default);
+        margin-bottom: 8px;
+    }
+    .ad-price__input{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--border-form);
+        border-radius: 4px;
+        font: var(--text-400-16);
+    }
+}
+
+.form-submit{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    padding: 12px;
+    background-color: var(--background-primary);
+    border: none;
+    border-radius: 4px;
+    font: var(--h5-400-20);
+    color: var(--text-light);
+}
+
+.form-submit:hover{
+    border: none;
+    background-color: var(--background-active);
+    transition: .5s;
+}
+
+.form-submit:active{
+    border: none;
+    box-shadow: none;
+}
+
+.form-submit-text{
+    font: var(--text-400-14);
+    color: var(--text-secondary);
+}
+
+.form-submit-text__ref{
+    font: var(--text-400-14);
+    color: var(--text-primary);
+}

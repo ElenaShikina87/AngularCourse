@@ -1,0 +1,89 @@
+/*Стиль кнопки авторизованного пользователя с выпадающим меню*/
+.header-block-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  position: relative;
+}
+
+.header-block-user-btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 8px 0;
+  color: var(--text-light);
+  font: var(--text-400-14);
+  background-color: transparent;
+  border: none;
+}
+
+.header-block-user-btn__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  padding: 2px;
+}
+
+.header-block-user-btn__label{
+  font: var(--text-400-14);
+  color: var(--text-light);
+}
+
+.header-block-user-btn__icon1 {
+  margin-left: 4px;
+}
+
+.header-block-user-btn:hover {
+  .header-block-user-btn__icon {color: var(--text-primary)}
+  .header-block-user-btn__label {color: var(--text-primary)}
+  .header-block-user-btn__icon1 {color: var(--text-primary)}
+}
+
+.header-block-user-btn:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.header-block-user-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  width: 147px;
+  background-color: var(--background-light);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, .1);
+  transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
+
+  .p-menuitem{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    align-self: flex-end;
+    margin:8px 16px;
+  }
+
+  .p-menuitem-link{
+    font: var(--text-400-14);
+    color: var(--text-default);
+  }
+  .p-menuitem-link:hover{
+    color: var(--text-primary);
+    font: var(--text-500-14);
+    background-color: var(--background-primary-op8);
+  }
+
+  .exit {
+    color: var(--text-danger);
+  }
+}
+
+

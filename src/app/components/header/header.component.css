@@ -9,76 +9,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: center;
-  width: 1296px;
-}
-
-.header-block-login {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-right: 24px;
-  padding: 8px 0;
-  color: var(--text-light);
-  background-color: transparent;
-  border: none;
-}
-
-.header-block-login .header-block-login__label {
-  font: var(--text-400-14);
-}
-
-.header-block-login .header-block-login__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  margin-right: 8px;
-  padding: 2px;
-}
-
-.header-block-login:hover {
-  color: var(--text-primary);
-}
-
-.header-block-login:focus {
-  border: none;
-  box-shadow: none;
-}
-
-.header-block-newAd {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 6px 12px;
-  background-color: var(--background-primary);
-  border: none;
-}
-
-.header-block-newAd:hover {
-  background: var(--background-active);
-}
-
-.header-block-newAd:focus {
-  border: none;
-  box-shadow: none;
-}
-
-.header-block-newAd .header-block-newAd__label {
-  font: var(--text-400-14);
-  color: var(--text-light);
-}
-
-.header-block-newAd .header-block-newAd__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  margin-left: 4px;
-  color: var(--text-light);
+  align-self: center;
+  align-items: flex-start;
 }
 

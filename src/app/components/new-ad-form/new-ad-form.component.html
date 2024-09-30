@@ -1,0 +1,51 @@
+<div class="container">
+  <h4>Новое объявление</h4>
+  <form [formGroup]="form" class="form-block">
+    <div class="categories-select">
+      <span class="categories-select__label">Выберите категорию</span>
+      <p-dropdown
+        styleClass="categories-select__dropdown" 
+        formControlName="category" 
+        optionLabel="name"
+        placeholder="Нажмите, чтобы выбрать" />
+    </div>
+    <div class="ad-name">
+      <span class="ad-name__label">Название объявления</span>
+      <input class="ad-name__input" type="text" pInputText formControlName="Name" placeholder="Что хотите продать?"/>
+    </div>
+    <div class="ad-description">
+      <span class="ad-description__label">Описание</span>
+      <textarea class="ad-description__input"
+        rows="5" 
+        cols="30" 
+        pInputTextarea 
+        formControlName="Description"
+        placeholder="Расскажите подробнее о товаре или услуге">
+    </textarea>
+    </div>
+    <div class="ad-address">
+      <span class="ad-address__label">Адрес (место проведения сделки)</span>
+      <input class="ad-address__input" type="text" pInputText formControlName="Location" placeholder="Начните вводить адрес"/>
+    </div>
+    <div class="ad-images">
+      <p-fileUpload styleClass="ad-images__button"
+          mode="basic" 
+          chooseLabel="Добавить картинки" 
+          chooseIcon="pi pi-images"
+          name="demo[]" 
+          url="https://www.primefaces.org/cdn/api/upload.php" 
+          accept="image/*" 
+          maxFileSize="1000000" 
+      />
+      <span class="ad-images__description">Максимум 10 картинок в формате jpeg, png или heic</span>    
+    </div>  
+    <div class="ad-price">
+      <span class="ad-price__label">Цена</span>
+      <input class="ad-price__input" type="text" pInputText formControlName="Cost" placeholder="0 &#8381;"/>
+    </div>
+    <p-button styleClass="form-submit" label="Разместить объявление" />
+    <span class="form-submit-text">Нажимая кнопку «Разместить объявление»,<br/> Вы соглашаетесь с <a class="form-submit-text__ref" href="#">правилами площадки</a></span>
+</form>
+
+</div>
+

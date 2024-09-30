@@ -1,0 +1,107 @@
+.product-block{
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+.main-box{
+  display: flex;
+  
+  justify-content: center;
+  width: 856px;
+  height: 512px;
+  background-size: contain;
+  margin-top: 16px;
+  img{
+  height: 100%;
+  }
+}
+
+
+
+h3{
+  font: var(--h3-600-30);
+  color: var(--text-default);
+  margin-top: 8px;
+  line-height: var(--line-height-h3);
+}
+
+.product-block-right-phone-hidden{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  padding: 20px 59px;
+  background-color: var(--background-primary);
+  border: none;
+  border-radius: 4px;
+}
+
+.product-block-right-phone-hidden__label{
+  font: var(--h5-400-20);
+  color: var(--text-light);
+  line-height: var(--line-height-h5);
+  margin-left: 12px;
+}
+
+.product-block-right-phone-show{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  font: var(--h3-600-30);
+  color: var(--text-primary);
+}
+
+.product-block-right-address{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.product-block-right-address__label{
+  font: var(--h4-600-24);
+  color: var(--text-default);
+  line-height: var(--line-height-h4);
+}
+
+.product-block-right-address__userLocation{
+  font: var(--text-400-16);
+  color: var(--text-default);
+  margin-top: 8px;
+}
+
+.product-block-right-address-openMap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 4px;
+  column-gap: 8px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-primary);
+  font: var(--text-400-16);
+}
+
+.product-block-right-description{
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.product-block-right-description__label{
+  font: var(--h4-600-24);
+  color: var(--text-default);
+  line-height: var(--line-height-h4);
+}
+
+.product-block-right-description__text{
+  font: var(--text-400-16);
+  line-height: var(--line-height-h6);
+  color: var(--text-default);
+  margin-top: 8px;
+}
